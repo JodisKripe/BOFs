@@ -2,5 +2,10 @@
 Repo for BOFs
 
 BOFs Created:
-- [x] whoami
+- [x] Whoami
+- [ ] Collect Token Information
+- [ ] Read Registry Value 
+
+BOFs Integrated into Havoc:
+- [ ] Whoami
 
