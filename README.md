@@ -7,5 +7,5 @@ BOFs Created:
 - [ ] Read Registry Value 
 
 BOFs Integrated into Havoc:
-- [ ] Whoami
+- [x] Whoami
 
