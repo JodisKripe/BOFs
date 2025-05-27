@@ -16,7 +16,7 @@ WINADVAPI WINBOOL WINAPI ADVAPI32$GetUserNameA (LPSTR lpBuffer, LPDWORD pcbBuffe
 WINBASEAPI DWORD WINAPI KERNEL32$GetLastError (VOID);
 #define GetLastError KERNEL32$GetLastError
 
-// x86_64-w64-mingw32-gcc -c whoami.c -o /mnt/c/Users/Admin/Downloads/whoami.o
+// x86_64-w64-mingw32-gcc -c whoami.c -o whoami.o
 
 void go(void * args, int len) {
     char username[UNLEN + 1]; // Buffer for username
@@ -35,6 +35,5 @@ void go(void * args, int len) {
         BeaconPrintf(CALLBACK_ERROR, "Failed to get computer name.\n", GetLastError());
     }
 
-    BeaconPrintf(CALLBACK_OUTPUT, "User Context: ");
-    BeaconPrintf(CALLBACK_OUTPUT, "%s\\%s\n", computername, username);
+    BeaconPrintf(CALLBACK_OUTPUT, "User Context: %s\\%s\n", computername, username);
 }
