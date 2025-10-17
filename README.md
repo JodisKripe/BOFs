@@ -8,4 +8,6 @@ BOFs Created:
 
 BOFs Integrate-able into Havoc:
 - [x] Whoami
+- [X] Collect Token Information
+- [ ] Read Registry Value
 
