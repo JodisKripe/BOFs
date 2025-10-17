@@ -7,7 +7,7 @@ def whomi(demonID, *params):
 
     TaskID = demon.ConsoleWrite( demon.CONSOLE_TASK, f'Running the custom whoami')
 
-    demon.InlineExecute(TaskID, "go" , f"whoami.o", b'',False) # Change this as per situation. The location has to be in respext to the python script
+    demon.InlineExecute(TaskID, "go" , f"whoami.o", b'',False) # Change this as per situation. The location has to be in respect to the python script
     
     return TaskID
 
